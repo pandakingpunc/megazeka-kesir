@@ -1,0 +1,20 @@
+{
+  "taban": "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit",
+  "train": "data/v11/train.jsonl",
+  "val": "data/v11/val.jsonl",
+  "max_seq_length": 1536,
+  "epochs": 2,
+  "batch_size": 8,
+  "gradient_accumulation": 2,
+  "learning_rate": 0.0002,
+  "warmup_steps": 0,
+  "scheduler": "linear",
+  "weight_decay": 0.001,
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.0,
+  "eval_steps": 2,
+  "save_steps": 2,
+  "seed": 42,
+  "logging_steps": 1
+}

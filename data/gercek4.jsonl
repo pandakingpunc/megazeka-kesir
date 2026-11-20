@@ -1,0 +1,120 @@
+{"messages":[{"role":"user","content":"5/34 çarpı 17/20 işlemini deftere geçiriyorum, sonucu ne yazayım?"}],"meta":{"id":"gercek4-001","kind":"mul","expression":"(5/34)*(17/20)","answer":"1/8"}}
+{"messages":[{"role":"user","content":"−3⁄22+8⁄33 için sonucu yazar mısın?"}],"meta":{"id":"gercek4-002","kind":"add","expression":"(-3/22)+(8/33)","answer":"7/66"}}
+{"messages":[{"role":"user","content":"16⁄27·9⁄32 kaç yapar?"}],"meta":{"id":"gercek4-003","kind":"mul","expression":"(16/27)*(9/32)","answer":"1/6"}}
+{"messages":[{"role":"user","content":"Tarifte hamur için yarım bardak süt, üzeri için de sekizde üç bardak süt gerekiyor. Sütü baştan tek kapta ölçsem kaç bardak ayırmalıyım?"}],"meta":{"id":"gercek4-004","kind":"word_add","expression":"(1/2)+(3/8)","answer":"7/8"}}
+{"messages":[{"role":"user","content":"11/28 - (-5/42) ="}],"meta":{"id":"gercek4-005","kind":"sub","expression":"(11/28)-(-5/42)","answer":"43/84"}}
+{"messages":[{"role":"user","content":"72/(-120) kesrini en sade hâliyle nasıl yazarız?"}],"meta":{"id":"gercek4-006","kind":"simplify","expression":"72/(-120)","answer":"-3/5"}}
+{"messages":[{"role":"user","content":"Otuz altıda on üçün yirmi dörtte yediye bölümünü bulabilir misin?"}],"meta":{"id":"gercek4-007","kind":"div","expression":"(13/36)/(7/24)","answer":"26/21"}}
+{"messages":[{"role":"user","content":"Payı otuz yedi, paydası sıfır olan kesrin bir değeri var mı?"}],"meta":{"id":"gercek4-008","kind":"invalid","expression":"37/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"47/60 bölü 9/20'yi sade bir kesir olarak yazar mısın?"}],"meta":{"id":"gercek4-009","kind":"div","expression":"(47/60)/(9/20)","answer":"47/27"}}
+{"messages":[{"role":"user","content":"Aşçı 6 tam 2/5 kg hamurun 5/8'ini ekmek için ayırdı. Ekmek yapımına ayrılan hamuru tartsak kaç kilo gelir?"}],"meta":{"id":"gercek4-010","kind":"word_of","expression":"(6+2/5)*(5/8)","answer":"4"}}
+{"messages":[{"role":"user","content":"Koridorun bir duvarı için 4 tam 3/10 metre, karşı duvar için 3 tam 7/15 metre süpürgelik gerekiyor. Ustaya toplam kaç metre lazım?"}],"meta":{"id":"gercek4-011","kind":"word_add","expression":"(4+3/10)+(3+7/15)","answer":"233/30"}}
+{"messages":[{"role":"user","content":"-38/0"}],"meta":{"id":"gercek4-012","kind":"invalid","expression":"-38/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Provanın ilk bölümü 1 tam 5/12 saat sürmüş, ikinci bölümü 2 tam 1/18 saat. Araları saymadan prova süresini kaç saat yazalım?"}],"meta":{"id":"gercek4-013","kind":"word_add","expression":"(1+5/12)+(2+1/18)","answer":"125/36"}}
+{"messages":[{"role":"user","content":"Yirmi beşte dokuzla on beşte dördü toplasam kaç çıkar?"}],"meta":{"id":"gercek4-014","kind":"add","expression":"(9/25)+(4/15)","answer":"47/75"}}
+{"messages":[{"role":"user","content":"−11∕18 [ ? ] −16∕27. Buraya hangi işaret gelir?"}],"meta":{"id":"gercek4-015","kind":"compare","expression":"(-11/18)|(-16/27)","answer":"<"}}
+{"messages":[{"role":"user","content":"(17/31) / (0/13) ="}],"meta":{"id":"gercek4-016","kind":"invalid","expression":"(17/31)/(0/13)","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"−46∕0 işleminde ne çıkar?"}],"meta":{"id":"gercek4-017","kind":"invalid","expression":"-46/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Aldığım badem dokuzda yedi kilo geldi. Komşuya üçte bir kilo verdikten sonra eve kaç kilo badem götürdüm?"}],"meta":{"id":"gercek4-018","kind":"word_sub","expression":"(7/9)-(1/3)","answer":"4/9"}}
+{"messages":[{"role":"user","content":"Şişede on birde sekiz litre yağ var. Bunun sekizde beşini kızartma için ayırırsak kaç litre yağ ayırmış oluruz?"}],"meta":{"id":"gercek4-019","kind":"word_of","expression":"(8/11)*(5/8)","answer":"5/11"}}
+{"messages":[{"role":"user","content":"Kırk ikide beş litrelik bir kepçem var. Tenceredeki altıda beş litre çorbayı bitirmek için bu kepçeyi kaç kez tam doldurmam gerekir?"}],"meta":{"id":"gercek4-020","kind":"word_div","expression":"(5/6)/(5/42)","answer":"7"}}
+{"messages":[{"role":"user","content":"Bahçenin yirmi beşte on yedisi sebzelik, sebzeliğin dörtte üçü kabak. Kabaklar bütün bahçenin kaçta kaçını kaplıyor?"}],"meta":{"id":"gercek4-021","kind":"word_of","expression":"(17/25)*(3/4)","answer":"51/100"}}
+{"messages":[{"role":"user","content":"7/30'u 14/33'e bölünce sonuç ne çıkar?"}],"meta":{"id":"gercek4-022","kind":"div","expression":"(7/30)/(14/33)","answer":"11/20"}}
+{"messages":[{"role":"user","content":"19/28'i 5/21'e böler misin"}],"meta":{"id":"gercek4-023","kind":"div","expression":"(19/28)/(5/21)","answer":"57/20"}}
+{"messages":[{"role":"user","content":"2 tam 7/18 ile 65/27 arasına hangi karşılaştırma işareti gelir?"}],"meta":{"id":"gercek4-024","kind":"compare","expression":"(2+7/18)|(65/27)","answer":"<"}}
+{"messages":[{"role":"user","content":"3 tam 2/21 ile 1 tam 4/35 toplandığında ne elde edilir?"}],"meta":{"id":"gercek4-025","kind":"mixed","expression":"(3+2/21)+(1+4/35)","answer":"442/105"}}
+{"messages":[{"role":"user","content":"Doksan altıda on bir metre uzunluğunda parçalar istiyor öğretmen. On ikide on bir metrelik kurdeleden bu boyda kaç parça çıkar?"}],"meta":{"id":"gercek4-026","kind":"word_div","expression":"(11/12)/(11/96)","answer":"8"}}
+{"messages":[{"role":"user","content":"Beşte üç kilo yoğurdum var, annem bunun yarısını çorbaya koy dedi. Çorbaya kaç kilo yoğurt koymam gerekiyor?"}],"meta":{"id":"gercek4-027","kind":"word_of","expression":"(3/5)*(1/2)","answer":"3/10"}}
+{"messages":[{"role":"user","content":"27⁄0 için sonuç ne yazılır?"}],"meta":{"id":"gercek4-028","kind":"invalid","expression":"27/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"154/210=?"}],"meta":{"id":"gercek4-029","kind":"simplify","expression":"154/210","answer":"11/15"}}
+{"messages":[{"role":"user","content":"(26∕45):(13∕30) böyle yazmış hoca, sonuç kaç?"}],"meta":{"id":"gercek4-030","kind":"div","expression":"(26/45)/(13/30)","answer":"4/3"}}
+{"messages":[{"role":"user","content":"İşin başında kovada yirmi ikide on yedi litre boya vardı. Akşama doğru on birde dört litresi kullanılmıştı. Artan boyayı kaç litre diye yazayım?"}],"meta":{"id":"gercek4-031","kind":"word_sub","expression":"(17/22)-(4/11)","answer":"9/22"}}
+{"messages":[{"role":"user","content":"Yürüyüşte çeşmeye kadar on dörtte dokuz kilometre, oradan kamp yerine kadar da on sekizde beş kilometre var. Başlangıçtan kamp yerine yürümek kaç kilometre eder?"}],"meta":{"id":"gercek4-032","kind":"word_add","expression":"(9/14)+(5/18)","answer":"58/63"}}
+{"messages":[{"role":"user","content":"Eksi 2 tam 7/24 sayısını 11/36'ya böler misin?"}],"meta":{"id":"gercek4-033","kind":"mixed","expression":"(-(2+7/24))/(11/36)","answer":"-15/2"}}
+{"messages":[{"role":"user","content":"17/36 + 5/24 ="}],"meta":{"id":"gercek4-034","kind":"add","expression":"(17/36)+(5/24)","answer":"49/72"}}
+{"messages":[{"role":"user","content":"Bisiklet turunun uzunluğu 8 tam 3/14 km. Sayaca göre 5 tam 5/21 km yol aldık, bitişe kaç kilometre var?"}],"meta":{"id":"gercek4-035","kind":"word_sub","expression":"(8+3/14)-(5+5/21)","answer":"125/42"}}
+{"messages":[{"role":"user","content":"52/0 kaç eder?"}],"meta":{"id":"gercek4-036","kind":"invalid","expression":"52/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Yirmi dokuzda on biri, on beşte sıfıra böldüğümde sonuç ne olur?"}],"meta":{"id":"gercek4-037","kind":"invalid","expression":"(11/29)/(0/15)","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"2 tam 1/3 metrelik çıtayı hiç artmayacak biçimde keseceğiz. Parçaların her biri 7/36 metre olursa kaç parça elde ederiz?"}],"meta":{"id":"gercek4-038","kind":"word_div","expression":"(2+1/3)/(7/36)","answer":"12"}}
+{"messages":[{"role":"user","content":"5/24 + 9/28 * 7/15"}],"meta":{"id":"gercek4-039","kind":"mixed","expression":"(5/24)+(9/28)*(7/15)","answer":"43/120"}}
+{"messages":[{"role":"user","content":"(-14/33) * 11/35 ="}],"meta":{"id":"gercek4-040","kind":"mul","expression":"(-14/33)*(11/35)","answer":"-2/15"}}
+{"messages":[{"role":"user","content":"15∕28+11∕42 kaç ediyor hocam"}],"meta":{"id":"gercek4-041","kind":"add","expression":"(15/28)+(11/42)","answer":"67/84"}}
+{"messages":[{"role":"user","content":"Payı eksi yetmiş iki, paydası yüz sekiz olan kesri en sade hâline getir."}],"meta":{"id":"gercek4-042","kind":"simplify","expression":"(-72)/108","answer":"-2/3"}}
+{"messages":[{"role":"user","content":"16/36 ? 22/51"}],"meta":{"id":"gercek4-043","kind":"compare","expression":"(16/36)|(22/51)","answer":">"}}
+{"messages":[{"role":"user","content":"96/168'i tamamen sadelestirir misin"}],"meta":{"id":"gercek4-044","kind":"simplify","expression":"96/168","answer":"4/7"}}
+{"messages":[{"role":"user","content":"Kano antrenmanında gidişi 11/16 km, dönüşü 17/24 km ölçtük. Antrenmanda kürek çektiğimiz mesafeyi kilometre olarak bulur musun?"}],"meta":{"id":"gercek4-045","kind":"word_add","expression":"(11/16)+(17/24)","answer":"67/48"}}
+{"messages":[{"role":"user","content":"Eksi otuz dokuzda on dördü, yirmi birde on üçle çarpınca ne çıkar?"}],"meta":{"id":"gercek4-046","kind":"mul","expression":"(-14/39)*(13/21)","answer":"-2/9"}}
+{"messages":[{"role":"user","content":"Tezgâhta 33/40 metre fitil kaldı. Bir mum için 3/40 metre fitil gerekiyorsa bu fitil kaç muma yeter?"}],"meta":{"id":"gercek4-047","kind":"word_div","expression":"(33/40)/(3/40)","answer":"11"}}
+{"messages":[{"role":"user","content":"21/25 * 15/28"}],"meta":{"id":"gercek4-048","kind":"mul","expression":"(21/25)*(15/28)","answer":"9/20"}}
+{"messages":[{"role":"user","content":"Yirmi dörtte on dokuz metre ipten on altıda beş metre kesilince uzun parça kaç metre olur?"}],"meta":{"id":"gercek4-049","kind":"word_sub","expression":"(19/24)-(5/16)","answer":"23/48"}}
+{"messages":[{"role":"user","content":"Reçelden 4 tam 1/5 kilo çıktı. Bendeki kavanozların her biri 7/25 kg reçel alıyor. Reçelin tamamı için kaç kavanoz dolduracağım?"}],"meta":{"id":"gercek4-050","kind":"word_div","expression":"(4+1/5)/(7/25)","answer":"15"}}
+{"messages":[{"role":"user","content":"38/57 … 47/72 arasına <, >, = işaretlerinden hangisi gelmeli?"}],"meta":{"id":"gercek4-051","kind":"compare","expression":"(38/57)|(47/72)","answer":">"}}
+{"messages":[{"role":"user","content":"13/22 * 11/26 = ?"}],"meta":{"id":"gercek4-052","kind":"mul","expression":"(13/22)*(11/26)","answer":"1/4"}}
+{"messages":[{"role":"user","content":"7/34'le 15/51'in toplamı kac eder"}],"meta":{"id":"gercek4-053","kind":"add","expression":"(7/34)+(15/51)","answer":"1/2"}}
+{"messages":[{"role":"user","content":"İki tam on ikide beşle on sekizde yediyi topla, sonra bulduğun sayıyı on birde altıyla çarp. Sonuç kaç?"}],"meta":{"id":"gercek4-054","kind":"mixed","expression":"((2+5/12)+(7/18))*(6/11)","answer":"101/66"}}
+{"messages":[{"role":"user","content":"−84⁄126 sadeleşince ne kalır?"}],"meta":{"id":"gercek4-055","kind":"simplify","expression":"-84/126","answer":"-2/3"}}
+{"messages":[{"role":"user","content":"On beşte on üç litre şerbet hazırladım. Her bardağı doksanda on üç litre şerbetle doldurursam bu şerbet kaç bardağa yeter?"}],"meta":{"id":"gercek4-056","kind":"word_div","expression":"(13/15)/(13/90)","answer":"6"}}
+{"messages":[{"role":"user","content":"Fidelerden 9/32 kg çilek toplandı. Toplanan çileklerin ağırlıkça 4/9'u ezik çıkmış. Ezik çilekler kaç kilogram geliyor?"}],"meta":{"id":"gercek4-057","kind":"word_of","expression":"(9/32)*(4/9)","answer":"1/8"}}
+{"messages":[{"role":"user","content":"4 tam 2/3 litrelik kovayı ağzına kadar doldurmuştuk. İçindeki suyun 3/7'si döküldü. Dökülen su kaç litre?"}],"meta":{"id":"gercek4-058","kind":"word_of","expression":"(4+2/3)*(3/7)","answer":"2"}}
+{"messages":[{"role":"user","content":"21⁄33 __ 35⁄55 boşluğa ne koyucaz"}],"meta":{"id":"gercek4-059","kind":"compare","expression":"(21/33)|(35/55)","answer":"="}}
+{"messages":[{"role":"user","content":"Seramikçi elindeki yirmi ikide on beş kilo çamurun tamamını kullanacak. Minik kaselerin her birine kırk dörtte üç kilo çamur gidiyor. Bu çamurla kaç kase yapabilir?"}],"meta":{"id":"gercek4-060","kind":"word_div","expression":"(15/22)/(3/44)","answer":"10"}}
+{"messages":[{"role":"user","content":"Eksi dokuz bölü on dört ile eksi on üç bölü yirmiyi karşılaştırıp araya uygun işareti koy."}],"meta":{"id":"gercek4-061","kind":"compare","expression":"(-9/14)|(-13/20)","answer":">"}}
+{"messages":[{"role":"user","content":"13/21 ? 17/28"}],"meta":{"id":"gercek4-062","kind":"compare","expression":"(13/21)|(17/28)","answer":">"}}
+{"messages":[{"role":"user","content":"Koşu yolunun on üçte dokuzu ormandan geçiyor. Ormandan geçen bölümün üçte ikisi yokuş olduğuna göre ormandaki yokuşlar tüm yolun ne kadarı?"}],"meta":{"id":"gercek4-063","kind":"word_of","expression":"(9/13)*(2/3)","answer":"6/13"}}
+{"messages":[{"role":"user","content":"18⁄55÷(−27⁄44) işleminin sonucu ne?"}],"meta":{"id":"gercek4-064","kind":"div","expression":"(18/55)/(-27/44)","answer":"-8/15"}}
+{"messages":[{"role":"user","content":"23∕44−(−7∕33) işlemini yapabilir misin?"}],"meta":{"id":"gercek4-065","kind":"sub","expression":"(23/44)-(-7/33)","answer":"97/132"}}
+{"messages":[{"role":"user","content":"Eksi yirmi beşte sekizi, otuz beşte on ikiye bölersem kaç çıkar?"}],"meta":{"id":"gercek4-066","kind":"div","expression":"(-8/25)/(12/35)","answer":"-14/15"}}
+{"messages":[{"role":"user","content":"(13/35) / (-26/49) = ?"}],"meta":{"id":"gercek4-067","kind":"div","expression":"(13/35)/(-26/49)","answer":"-7/10"}}
+{"messages":[{"role":"user","content":"Heykel ödevi için getirdiğim kil beşte dört kiloydu. Heykelin başına on beşte yedi kilo kullandım. Elimde kaç kilo kil kaldı?"}],"meta":{"id":"gercek4-068","kind":"word_sub","expression":"(4/5)-(7/15)","answer":"1/3"}}
+{"messages":[{"role":"user","content":"(19⁄35−2⁄15)÷(8⁄21) kaça eşit?"}],"meta":{"id":"gercek4-069","kind":"mixed","expression":"((19/35)-(2/15))/(8/21)","answer":"43/40"}}
+{"messages":[{"role":"user","content":"Bir saksıya 5/14 litre su verdim, öbürüne 3/7 litre yetti. Sulama kabından bu iki saksıya ne kadar su gitmiş? Litre olarak soruyorum."}],"meta":{"id":"gercek4-070","kind":"word_add","expression":"(5/14)+(3/7)","answer":"11/14"}}
+{"messages":[{"role":"user","content":"Aynı depoya sabah 13/40 ton, akşam 7/25 ton yem bırakılmış. O gün depoya giren yem kaç ton?"}],"meta":{"id":"gercek4-071","kind":"word_add","expression":"(13/40)+(7/25)","answer":"121/200"}}
+{"messages":[{"role":"user","content":"126/198 = ?"}],"meta":{"id":"gercek4-072","kind":"simplify","expression":"126/198","answer":"7/11"}}
+{"messages":[{"role":"user","content":"17/20 litre gübre çözeltisini 17/100 litrelik dozlar hâlinde kullanıyorum. Bu miktardan kaç doz çıkar?"}],"meta":{"id":"gercek4-073","kind":"word_div","expression":"(17/20)/(17/100)","answer":"5"}}
+{"messages":[{"role":"user","content":"Minderler için spor salonunun 15/28'ini boşalttık. Açtığımız alanın 7/10'una minder serdik. Minderler salonun tamamının ne kadarını kaplıyor?"}],"meta":{"id":"gercek4-074","kind":"word_of","expression":"(15/28)*(7/10)","answer":"3/8"}}
+{"messages":[{"role":"user","content":"Resim dersinde maketin çatısına çeyrek tabaka, duvarlarına on ikide beş tabaka karton kullandık. İkisi için bir arada kaç tabaka karton harcamış olduk?"}],"meta":{"id":"gercek4-075","kind":"word_add","expression":"(1/4)+(5/12)","answer":"2/3"}}
+{"messages":[{"role":"user","content":"Ölçümde kar kalınlığı önce 13/25 metre, erime sonunda 3/20 metre çıktı. Karın kalınlığı kaç metre azalmış?"}],"meta":{"id":"gercek4-076","kind":"word_sub","expression":"(13/25)-(3/20)","answer":"37/100"}}
+{"messages":[{"role":"user","content":"(23/30 + 7/45) * (9/11) = ?"}],"meta":{"id":"gercek4-077","kind":"mixed","expression":"((23/30)+(7/45))*(9/11)","answer":"83/110"}}
+{"messages":[{"role":"user","content":"5/16'yı, 7/18'den 14/36 çıkınca kalan sayıya bölersek ne olur?"}],"meta":{"id":"gercek4-078","kind":"invalid","expression":"(5/16)/((7/18)-(14/36))","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Fide dikmek için ayrılan 19/28 dönümlük yerin 3/14 dönümüne domates ektik. Fide dikilecek boş alan kaç dönüm kaldı?"}],"meta":{"id":"gercek4-079","kind":"word_sub","expression":"(19/28)-(3/14)","answer":"13/28"}}
+{"messages":[{"role":"user","content":"25/36 - 17/54"}],"meta":{"id":"gercek4-080","kind":"sub","expression":"(25/36)-(17/54)","answer":"41/108"}}
+{"messages":[{"role":"user","content":"Önce eksi bir tam on altıda üçten sekizde biri çıkar. Çıkan sonucu on üçte dörde bölünce ne bulursun?"}],"meta":{"id":"gercek4-081","kind":"mixed","expression":"(-(1+3/16)-(1/8))/(4/13)","answer":"-273/64"}}
+{"messages":[{"role":"user","content":"Payı 8, paydası 39 olan kesri 13/24 ile çarpar mısın?"}],"meta":{"id":"gercek4-082","kind":"mul","expression":"(8/39)*(13/24)","answer":"1/9"}}
+{"messages":[{"role":"user","content":"Otuz dörtte on beşle yirmi beşte on yediyi çarparsak ne olur?"}],"meta":{"id":"gercek4-083","kind":"mul","expression":"(15/34)*(17/25)","answer":"3/10"}}
+{"messages":[{"role":"user","content":"(19⁄44)÷(0⁄23) işlemi neye eşit?"}],"meta":{"id":"gercek4-084","kind":"invalid","expression":"(19/44)/(0/23)","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Antrenmanda yirmi beşte yirmi bir kilometrelik yolu koşacağım. Bir tur yirmi beşte üç kilometre ise kaç tam tur koşmuş olurum?"}],"meta":{"id":"gercek4-085","kind":"word_div","expression":"(21/25)/(3/25)","answer":"7"}}
+{"messages":[{"role":"user","content":"22/45 ile 15/44'ü çarp. Sonucu en sade biçimde yaz."}],"meta":{"id":"gercek4-086","kind":"mul","expression":"(22/45)*(15/44)","answer":"1/6"}}
+{"messages":[{"role":"user","content":"Pazardan aldığım çilek yirmide dokuz kilo geldi. Eve dönerken beşte iki kilo daha aldım, eve toplam kaç kilo çilek götürdüm?"}],"meta":{"id":"gercek4-087","kind":"word_add","expression":"(9/20)+(2/5)","answer":"17/20"}}
+{"messages":[{"role":"user","content":"Çizim yapmam 7/15 saat sürdü. Bu sürenin 5/14'ünde cetvel kullandıysam cetvelle kaç saat çalıştım?"}],"meta":{"id":"gercek4-088","kind":"word_of","expression":"(7/15)*(5/14)","answer":"1/6"}}
+{"messages":[{"role":"user","content":"11/18'den 13/27'yi çıkarmam lazım, fark kaç?"}],"meta":{"id":"gercek4-089","kind":"sub","expression":"(11/18)-(13/27)","answer":"7/54"}}
+{"messages":[{"role":"user","content":"23/35 + 4/15 = ?"}],"meta":{"id":"gercek4-090","kind":"add","expression":"(23/35)+(4/15)","answer":"97/105"}}
+{"messages":[{"role":"user","content":"Otuz sekizde on yediye eksi on dokuzda yediyi ekle."}],"meta":{"id":"gercek4-091","kind":"add","expression":"(17/38)+(-7/19)","answer":"3/38"}}
+{"messages":[{"role":"user","content":"Eksi yirmi sekizde dokuzdan on dörtte beşi çıkar. Sonuç kaç?"}],"meta":{"id":"gercek4-092","kind":"sub","expression":"(-9/28)-(5/14)","answer":"-19/28"}}
+{"messages":[{"role":"user","content":"Terziye götürdüğüm kumaş 3 tam 7/20 metreydi. Terzi etek için 1 tam 11/30 metre ayırdı. Eteğe ayrılan parça dışında kaç metre kumaş kaldı?"}],"meta":{"id":"gercek4-093","kind":"word_sub","expression":"(3+7/20)-(1+11/30)","answer":"119/60"}}
+{"messages":[{"role":"user","content":"Ölçü kabında on altıda üç litre su vardı. Ece, sekizde beş litre daha koyunca kaptaki su kaç litreye çıktı?"}],"meta":{"id":"gercek4-094","kind":"word_add","expression":"(3/16)+(5/8)","answer":"13/16"}}
+{"messages":[{"role":"user","content":"Altmış beş bölü yüz dördü en sade hâliyle yazar mısın?"}],"meta":{"id":"gercek4-095","kind":"simplify","expression":"65/104","answer":"5/8"}}
+{"messages":[{"role":"user","content":"19/48 ile 5/16'yı toplarken sonucu kaç buluruz?"}],"meta":{"id":"gercek4-096","kind":"add","expression":"(19/48)+(5/16)","answer":"17/24"}}
+{"messages":[{"role":"user","content":"Kırk beşte yirmi ikiden otuzda on biri çıkarınca kaç kalır?"}],"meta":{"id":"gercek4-097","kind":"sub","expression":"(22/45)-(11/30)","answer":"11/90"}}
+{"messages":[{"role":"user","content":"Okul gezisi için 3 tam 3/8 kilo kuru üzüm ayırdık. Her poşete 3/16 kilo düşecek şekilde hepsini pay edersek kaç poşet doldururuz?"}],"meta":{"id":"gercek4-098","kind":"word_div","expression":"(3+3/8)/(3/16)","answer":"18"}}
+{"messages":[{"role":"user","content":"(-7/26) + (9/39)"}],"meta":{"id":"gercek4-099","kind":"add","expression":"(-7/26)+(9/39)","answer":"-1/26"}}
+{"messages":[{"role":"user","content":"17⁄39−5⁄26 farkı nedir?"}],"meta":{"id":"gercek4-100","kind":"sub","expression":"(17/39)-(5/26)","answer":"19/78"}}
+{"messages":[{"role":"user","content":"25∕36×(−12∕35) çarpımı kaç?"}],"meta":{"id":"gercek4-101","kind":"mul","expression":"(25/36)*(-12/35)","answer":"-5/21"}}
+{"messages":[{"role":"user","content":"Önce 4 tam 3/14'ü 2/9 ile çarp. Sonra çıkan sayıya 5/21 ekle. Sonuç ne?"}],"meta":{"id":"gercek4-102","kind":"mixed","expression":"((4+3/14)*(2/9))+(5/21)","answer":"74/63"}}
+{"messages":[{"role":"user","content":"6 tam 5/18'i bileşik kesre nasıl çeviririm?"}],"meta":{"id":"gercek4-103","kind":"mixed","expression":"(6+5/18)","answer":"113/18"}}
+{"messages":[{"role":"user","content":"Hocam 8/21'e 13/30 eklesek ne çıkıyo?"}],"meta":{"id":"gercek4-104","kind":"add","expression":"(8/21)+(13/30)","answer":"57/70"}}
+{"messages":[{"role":"user","content":"-105/-150 kesrini sadeleştir."}],"meta":{"id":"gercek4-105","kind":"simplify","expression":"(-105)/(-150)","answer":"7/10"}}
+{"messages":[{"role":"user","content":"Yarışta Deniz 37/40 dakikada, Ege 13/16 dakikada parkuru bitirdi. Deniz'in süresi kaç dakika daha uzun?"}],"meta":{"id":"gercek4-106","kind":"word_sub","expression":"(37/40)-(13/16)","answer":"9/80"}}
+{"messages":[{"role":"user","content":"Bir makaranın üstünde dokuzda yedi metre tel kalmış. Elektrikçi bu telin onda üçünü kullanacakmış, kaç metre tel kullanacak?"}],"meta":{"id":"gercek4-107","kind":"word_of","expression":"(7/9)*(3/10)","answer":"7/30"}}
+{"messages":[{"role":"user","content":"13/20'den 19/35'i çıkarınca hangi kesri buluruz?"}],"meta":{"id":"gercek4-108","kind":"sub","expression":"(13/20)-(19/35)","answer":"3/28"}}
+{"messages":[{"role":"user","content":"43/0 = ?"}],"meta":{"id":"gercek4-109","kind":"invalid","expression":"43/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"(25/42) / (10/21)"}],"meta":{"id":"gercek4-110","kind":"div","expression":"(25/42)/(10/21)","answer":"5/4"}}
+{"messages":[{"role":"user","content":"-117/162 ="}],"meta":{"id":"gercek4-111","kind":"simplify","expression":"-117/162","answer":"-13/18"}}
+{"messages":[{"role":"user","content":"Payı 132, paydası 176. sadeleştirince ne oluyor?"}],"meta":{"id":"gercek4-112","kind":"simplify","expression":"132/176","answer":"3/4"}}
+{"messages":[{"role":"user","content":"19/27 ? 24/35"}],"meta":{"id":"gercek4-113","kind":"compare","expression":"(19/27)|(24/35)","answer":">"}}
+{"messages":[{"role":"user","content":"18/25 ile 23/32 arasına <, = ya da > işaretlerinden uygun olanı yaz."}],"meta":{"id":"gercek4-114","kind":"compare","expression":"(18/25)|(23/32)","answer":">"}}
+{"messages":[{"role":"user","content":"31/42 - (5/18 + 2/63) ="}],"meta":{"id":"gercek4-115","kind":"mixed","expression":"(31/42)-((5/18)+(2/63))","answer":"3/7"}}
+{"messages":[{"role":"user","content":"(14/27) / (7/18) ="}],"meta":{"id":"gercek4-116","kind":"div","expression":"(14/27)/(7/18)","answer":"4/3"}}
+{"messages":[{"role":"user","content":"Mataramda otuzda yirmi üç litre su vardı. Molada on ikide beş litre su içtim. Matarada kaç litre su var şimdi?"}],"meta":{"id":"gercek4-117","kind":"word_sub","expression":"(23/30)-(5/12)","answer":"7/20"}}
+{"messages":[{"role":"user","content":"Yirmi dokuzda on bir, otuz ikide on üçten küçük mü, büyük mü, yoksa ikisi eşit mi?"}],"meta":{"id":"gercek4-118","kind":"compare","expression":"(11/29)|(13/32)","answer":"<"}}
+{"messages":[{"role":"user","content":"9/32 eksi 7/48 ne eder?"}],"meta":{"id":"gercek4-119","kind":"sub","expression":"(9/32)-(7/48)","answer":"13/96"}}
+{"messages":[{"role":"user","content":"29/40 - 7/24 = ?"}],"meta":{"id":"gercek4-120","kind":"sub","expression":"(29/40)-(7/24)","answer":"13/30"}}

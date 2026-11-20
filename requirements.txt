@@ -1,0 +1,11 @@
+# Önce platformunuza uygun CUDA destekli PyTorch kurun.
+# Veri üretimi ve CPU testleri için bu paketler gerekmez.
+transformers==5.5.4
+peft==0.18.1
+accelerate
+bitsandbytes==0.50.2
+safetensors
+
+# Eğitim için ek paketler Windows'ta Unsloth Studio ortamında kullanıldı.
+# unsloth==2026.11.5
+# trl==0.23.1

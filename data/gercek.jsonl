@@ -1,0 +1,60 @@
+{"messages":[{"role":"user","content":"7/12 … 11/18. Soldan sağa okuyunca boşluğa <, =, > işaretlerinden hangisi gelir?"}],"meta":{"id":"gercek-001","kind":"compare","expression":"(7/12)|(11/18)","answer":"<"}}
+{"messages":[{"role":"user","content":"−5⁄8 ile −13⁄20’yi karşılaştır. Soldaki için sağdakine göre <, = ya da > yaz."}],"meta":{"id":"gercek-002","kind":"compare","expression":"(-5/8)|(-13/20)","answer":">"}}
+{"messages":[{"role":"user","content":"21/49 [?] 9/21. Soru işaretinin yerine <, = veya > koy."}],"meta":{"id":"gercek-003","kind":"compare","expression":"(21/49)|(9/21)","answer":"="}}
+{"messages":[{"role":"user","content":"0/37__-1/91 gösteriminde boş yere hangi karşılaştırma işareti gelir (<, =, >)?"}],"meta":{"id":"gercek-004","kind":"compare","expression":"(0/37)|(-1/91)","answer":">"}}
+{"messages":[{"role":"user","content":"Solda sekiz bölü yedi, sağda yirmi beş bölü yirmi iki var. Aralarına <, =, > işaretlerinden hangisini yazarsın?"}],"meta":{"id":"gercek-005","kind":"compare","expression":"(8/7)|(25/22)","answer":">"}}
+{"messages":[{"role":"user","content":"150/210 en sade hâliyle ne?"}],"meta":{"id":"gercek-006","kind":"simplify","expression":"150/210","answer":"5/7"}}
+{"messages":[{"role":"user","content":"−114⁄152 kesrini sadeleştir."}],"meta":{"id":"gercek-007","kind":"simplify","expression":"-114/152","answer":"-3/4"}}
+{"messages":[{"role":"user","content":"0/126 sadeleştiğinde hangi sayıyı verir?"}],"meta":{"id":"gercek-008","kind":"simplify","expression":"0/126","answer":"0"}}
+{"messages":[{"role":"user","content":"Payı 196, paydası 84 olan kesri indirgenmiş olarak yaz."}],"meta":{"id":"gercek-009","kind":"simplify","expression":"196/84","answer":"7/3"}}
+{"messages":[{"role":"user","content":"Payı −96, paydası −144 olan kesri sadeleştirip paydayı pozitif yaz."}],"meta":{"id":"gercek-010","kind":"simplify","expression":"(-96)/(-144)","answer":"2/3"}}
+{"messages":[{"role":"user","content":"7/15+2/21 kaç eder?"}],"meta":{"id":"gercek-011","kind":"add","expression":"(7/15)+(2/21)","answer":"59/105"}}
+{"messages":[{"role":"user","content":"−11⁄24 ile 13⁄36’yı topla ve sonucu sadeleştir."}],"meta":{"id":"gercek-012","kind":"add","expression":"(-11/24)+(13/36)","answer":"-7/72"}}
+{"messages":[{"role":"user","content":"On yedi bölü on dokuza iki bölü on dokuz ekleyince ne oluyor?"}],"meta":{"id":"gercek-013","kind":"add","expression":"(17/19)+(2/19)","answer":"1"}}
+{"messages":[{"role":"user","content":"0 / 25 + 23 / 46 toplamının değerini bul."}],"meta":{"id":"gercek-014","kind":"add","expression":"(0/25)+(23/46)","answer":"1/2"}}
+{"messages":[{"role":"user","content":"İki negatif kesrin toplamı nedir? (−5/14)+(−9/35)"}],"meta":{"id":"gercek-015","kind":"add","expression":"(-5/14)+(-9/35)","answer":"-43/70"}}
+{"messages":[{"role":"user","content":"3/16−7/24 sonucunu sadeleştir."}],"meta":{"id":"gercek-016","kind":"sub","expression":"(3/16)-(7/24)","answer":"-5/48"}}
+{"messages":[{"role":"user","content":"Eksi on beş bölü yirmi ikiden eksi üç bölü on biri çıkar."}],"meta":{"id":"gercek-017","kind":"sub","expression":"(-15/22)-(-3/11)","answer":"-9/22"}}
+{"messages":[{"role":"user","content":"(26/39)−(10/15) işlemi kaç eder?"}],"meta":{"id":"gercek-018","kind":"sub","expression":"(26/39)-(10/15)","answer":"0"}}
+{"messages":[{"role":"user","content":"19/28 kesrinden 0/11 çıkarınca ne kalır?"}],"meta":{"id":"gercek-019","kind":"sub","expression":"(19/28)-(0/11)","answer":"19/28"}}
+{"messages":[{"role":"user","content":"25⁄18’den 11⁄27’yi çıkar. Sonucu basit ya da bileşik kesir olarak ver."}],"meta":{"id":"gercek-020","kind":"sub","expression":"(25/18)-(11/27)","answer":"53/54"}}
+{"messages":[{"role":"user","content":"14/25×15/28 kaç?"}],"meta":{"id":"gercek-021","kind":"mul","expression":"(14/25)*(15/28)","answer":"3/10"}}
+{"messages":[{"role":"user","content":"İşlemi en sade sonuçla bitir: (−21⁄32)·(16⁄35)."}],"meta":{"id":"gercek-022","kind":"mul","expression":"(-21/32)*(16/35)","answer":"-3/10"}}
+{"messages":[{"role":"user","content":"−27/55 ve −22/81’in çarpımı nedir?"}],"meta":{"id":"gercek-023","kind":"mul","expression":"(-27/55)*(-22/81)","answer":"2/15"}}
+{"messages":[{"role":"user","content":"(0/103)(31/47) çarpımının değeri nedir?"}],"meta":{"id":"gercek-024","kind":"mul","expression":"(0/103)*(31/47)","answer":"0"}}
+{"messages":[{"role":"user","content":"Kırk beş bölü on dört ile yedi bölü on sekizi çarp."}],"meta":{"id":"gercek-025","kind":"mul","expression":"(45/14)*(7/18)","answer":"5/4"}}
+{"messages":[{"role":"user","content":"16/33 ÷ 8/55 sonucunu yaz."}],"meta":{"id":"gercek-026","kind":"div","expression":"(16/33)/(8/55)","answer":"10/3"}}
+{"messages":[{"role":"user","content":"−18⁄35 kesrini 27⁄49’a bölersem sonuç nedir?"}],"meta":{"id":"gercek-027","kind":"div","expression":"(-18/35)/(27/49)","answer":"-14/15"}}
+{"messages":[{"role":"user","content":"(−14/39):(−7/26) bölmesi kaç eder?"}],"meta":{"id":"gercek-028","kind":"div","expression":"(-14/39)/(-7/26)","answer":"4/3"}}
+{"messages":[{"role":"user","content":"Bölünen 0/83, bölen 37/91. Bölüm kaç?"}],"meta":{"id":"gercek-029","kind":"div","expression":"(0/83)/(37/91)","answer":"0"}}
+{"messages":[{"role":"user","content":"Otuz beş bölü yirmi altıyı yirmi beş bölü otuz dokuza böl."}],"meta":{"id":"gercek-030","kind":"div","expression":"(35/26)/(25/39)","answer":"21/10"}}
+{"messages":[{"role":"user","content":"Dört tam on ikide beşi bileşik kesir olarak yaz."}],"meta":{"id":"gercek-031","kind":"mixed","expression":"(4+5/12)","answer":"53/12"}}
+{"messages":[{"role":"user","content":"Eksi üç tam on altıda yediyi, eksi tüm sayıya ait olacak şekilde tek kesirle göster."}],"meta":{"id":"gercek-032","kind":"mixed","expression":"-(3+7/16)","answer":"-55/16"}}
+{"messages":[{"role":"user","content":"2 tam 5/18 ile 1 tam 7/24’ü topla. Sonucu tek kesirle yaz."}],"meta":{"id":"gercek-033","kind":"mixed","expression":"(2+5/18)+(1+7/24)","answer":"257/72"}}
+{"messages":[{"role":"user","content":"3 tam 2/15’ten 1 tam 11/20’yi çıkar. Sonuç hangi sade kesirdir?"}],"meta":{"id":"gercek-034","kind":"mixed","expression":"(3+2/15)-(1+11/20)","answer":"19/12"}}
+{"messages":[{"role":"user","content":"İki tam on dörtte üç sayısını beş bölü on bir ile çarp."}],"meta":{"id":"gercek-035","kind":"mixed","expression":"(2+3/14)*(5/11)","answer":"155/154"}}
+{"messages":[{"role":"user","content":"Sema iki renk boya karıştırıyor. Mavi boyadan 5/18 litre, beyazdan 7/30 litre kullandı. Toplam kaç litre boya karıştırdı?"}],"meta":{"id":"gercek-036","kind":"word_add","expression":"(5/18)+(7/30)","answer":"23/45"}}
+{"messages":[{"role":"user","content":"Bir kuş gözlemcisi sabah 11/40 saat, öğleden sonra 3/16 saat kayıt tuttu. Toplam kaç saat kayıt tuttu?"}],"meta":{"id":"gercek-037","kind":"word_add","expression":"(11/40)+(3/16)","answer":"37/80"}}
+{"messages":[{"role":"user","content":"İki tahta parçasının uzunlukları 2/13 m ve 8/39 m. Uç uca geldiklerinde toplam kaç metre ederler?"}],"meta":{"id":"gercek-038","kind":"word_add","expression":"(2/13)+(8/39)","answer":"14/39"}}
+{"messages":[{"role":"user","content":"Pazardan üç bölü yirmi iki kilo ceviz ve beş bölü otuz üç kilo fındık aldım. İkisi toplam kaç kilo?"}],"meta":{"id":"gercek-039","kind":"word_add","expression":"(3/22)+(5/33)","answer":"19/66"}}
+{"messages":[{"role":"user","content":"Atölyenin bir deposuna 7/25 litre vernik, diğerine 9/50 litre vernik kondu. İki depoya konan verniğin toplamı kaç litre?"}],"meta":{"id":"gercek-040","kind":"word_add","expression":"(7/25)+(9/50)","answer":"23/50"}}
+{"messages":[{"role":"user","content":"17/24 metrelik kumaşın 5/32 metresi bir yama için kesildi. Kumaştan kaç metre kaldı?"}],"meta":{"id":"gercek-041","kind":"word_sub","expression":"(17/24)-(5/32)","answer":"53/96"}}
+{"messages":[{"role":"user","content":"Bir kovadaki 13/18 litre suyun 4/27 litresini fidana döktüm. Kovada kaç litre su kaldı?"}],"meta":{"id":"gercek-042","kind":"word_sub","expression":"(13/18)-(4/27)","answer":"31/54"}}
+{"messages":[{"role":"user","content":"Yirmi dokuz bölü otuz altı kilometrelik etabın yedi bölü on iki kilometresini bisikletle geçtim. Etabı bitirmek için kaç kilometre daha gitmeliyim?"}],"meta":{"id":"gercek-043","kind":"word_sub","expression":"(29/36)-(7/12)","answer":"2/9"}}
+{"messages":[{"role":"user","content":"Buz kalıbında 31/70 kilogram buz vardı. 2/35 kilogram eriyip akınca geriye kaç kilogram buz kaldı?"}],"meta":{"id":"gercek-044","kind":"word_sub","expression":"(31/70)-(2/35)","answer":"27/70"}}
+{"messages":[{"role":"user","content":"Tezgahta 16/45 kilogram peynir var. Müşteri 4/15 kilogram alıyor. Tezgahta kaç kilogram peynir kalır?"}],"meta":{"id":"gercek-045","kind":"word_sub","expression":"(16/45)-(4/15)","answer":"4/45"}}
+{"messages":[{"role":"user","content":"7/22 litre şurubun 11/28 kadarı karışıma girecek. Karışıma kaç litre şurup girer?"}],"meta":{"id":"gercek-046","kind":"word_of","expression":"(7/22)*(11/28)","answer":"1/8"}}
+{"messages":[{"role":"user","content":"13/20 metre telin 15/26’sı takı yapımında kullanıldı. Kaç metre tel kullanıldı?"}],"meta":{"id":"gercek-047","kind":"word_of","expression":"(13/20)*(15/26)","answer":"3/8"}}
+{"messages":[{"role":"user","content":"Bir torbada 3/14 kilogram irmik var. Torbadaki irmiğin 7/15’iyle tatlı yapılırsa kaç kilogram irmik harcanır?"}],"meta":{"id":"gercek-048","kind":"word_of","expression":"(3/14)*(7/15)","answer":"1/10"}}
+{"messages":[{"role":"user","content":"Bir ses kaydı 4/9 saat sürüyor. Kaydın 27/40’ını dinledim. Kaç saat dinledim?"}],"meta":{"id":"gercek-049","kind":"word_of","expression":"(4/9)*(27/40)","answer":"3/10"}}
+{"messages":[{"role":"user","content":"Fırçaya ayrılan 9/28 litre boyanın 14/33’ü kullanıldı. Kullanılan boya kaç litre?"}],"meta":{"id":"gercek-050","kind":"word_of","expression":"(9/28)*(14/33)","answer":"3/22"}}
+{"messages":[{"role":"user","content":"11/24 litre komposto yaptım. Bir porsiyon 7/36 litre. Son porsiyon eksikse onu da kesirli olarak sayınca kaç porsiyon eder?"}],"meta":{"id":"gercek-051","kind":"word_div","expression":"(11/24)/(7/36)","answer":"33/14"}}
+{"messages":[{"role":"user","content":"Bir ölçü 2/15 kilogram ise 17/30 kilogram kakao kaç ölçüdür? Kesirli ölçüyü de hesaba kat."}],"meta":{"id":"gercek-052","kind":"word_div","expression":"(17/30)/(2/15)","answer":"17/4"}}
+{"messages":[{"role":"user","content":"Bir şişe 5/14 litre alıyor. 2/21 litre içecek bu şişenin kaçta kaçını doldurur?"}],"meta":{"id":"gercek-053","kind":"word_div","expression":"(2/21)/(5/14)","answer":"4/15"}}
+{"messages":[{"role":"user","content":"Kalan 23/45 metre ipi 11/60 metrelik bir parça ile karşılaştırıyorum. Kalan ip bir parçanın kaç katı?"}],"meta":{"id":"gercek-054","kind":"word_div","expression":"(23/45)/(11/60)","answer":"92/33"}}
+{"messages":[{"role":"user","content":"15/28 litre suyum var. Kalıp başına 5/21 litre gerekiyor. Bu su, bir kalıbın kapasitesinin kaç katı? Sonucu kesir olarak yaz."}],"meta":{"id":"gercek-055","kind":"word_div","expression":"(15/28)/(5/21)","answer":"9/4"}}
+{"messages":[{"role":"user","content":"17/0 için bir sonuç var mı?"}],"meta":{"id":"gercek-056","kind":"invalid","expression":"17/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"9⁄38 ÷ 0⁄57 işleminin sonucu nedir?"}],"meta":{"id":"gercek-057","kind":"invalid","expression":"(9/38)/(0/57)","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Pay ve payda ikisi de sıfırken kesir bir sayı belirtir mi?"}],"meta":{"id":"gercek-058","kind":"invalid","expression":"0/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Eksi yirmi üçü sıfıra bölünce sonuç tanımlı mı?"}],"meta":{"id":"gercek-059","kind":"invalid","expression":"-23/0","answer":"tanımsız"}}
+{"messages":[{"role":"user","content":"Sıfır bölü kırk bir, sıfır bölü yetmiş üçe bölünüyor. İşlemin değeri nedir?"}],"meta":{"id":"gercek-060","kind":"invalid","expression":"(0/41)/(0/73)","answer":"tanımsız"}}

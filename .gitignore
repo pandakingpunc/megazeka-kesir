@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+unsloth_compiled_cache/
+data/v13/
+data/train.jsonl
+data/val.jsonl
+data/v11/train.jsonl
+data/v11/val.jsonl
+data/v12/
+models/
+*.safetensors
+*.log
+reports/gecmis-*.jsonl

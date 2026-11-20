@@ -1,0 +1,24 @@
+{"messages": [{"role": "user", "content": "3/4+1/2"}], "meta": {"id": "yok-001", "kind": "add", "expression": "(3/4)+(1/2)", "answer": "5/4"}}
+{"messages": [{"role": "user", "content": "3/4 + 5/12 = ?"}], "meta": {"id": "yok-002", "kind": "add", "expression": "(3/4)+(5/12)", "answer": "7/6"}}
+{"messages": [{"role": "user", "content": "2/9+5/6=?"}], "meta": {"id": "yok-003", "kind": "add", "expression": "(2/9)+(5/6)", "answer": "19/18"}}
+{"messages": [{"role": "user", "content": "7/8 - 1/3 ="}], "meta": {"id": "yok-004", "kind": "sub", "expression": "(7/8)-(1/3)", "answer": "13/24"}}
+{"messages": [{"role": "user", "content": "−3/8 − 1/4 = ?"}], "meta": {"id": "yok-005", "kind": "sub", "expression": "(-3/8)-(1/4)", "answer": "-5/8"}}
+{"messages": [{"role": "user", "content": "5/6-7/10=?"}], "meta": {"id": "yok-006", "kind": "sub", "expression": "(5/6)-(7/10)", "answer": "2/15"}}
+{"messages": [{"role": "user", "content": "2/3 × 5/7 = ?"}], "meta": {"id": "yok-007", "kind": "mul", "expression": "(2/3)*(5/7)", "answer": "10/21"}}
+{"messages": [{"role": "user", "content": "4/9*3/8=?"}], "meta": {"id": "yok-008", "kind": "mul", "expression": "(4/9)*(3/8)", "answer": "1/6"}}
+{"messages": [{"role": "user", "content": "(−5/6)·(9/10) ="}], "meta": {"id": "yok-009", "kind": "mul", "expression": "(-5/6)*(9/10)", "answer": "-3/4"}}
+{"messages": [{"role": "user", "content": "5/6 ÷ 2/3="}], "meta": {"id": "yok-010", "kind": "div", "expression": "(5/6)/(2/3)", "answer": "5/4"}}
+{"messages": [{"role": "user", "content": "7/12 : 14/9 = ?"}], "meta": {"id": "yok-011", "kind": "div", "expression": "(7/12)/(14/9)", "answer": "3/8"}}
+{"messages": [{"role": "user", "content": "(3/10)/(9/20)=?"}], "meta": {"id": "yok-012", "kind": "div", "expression": "(3/10)/(9/20)", "answer": "2/3"}}
+{"messages": [{"role": "user", "content": "18/24=?"}], "meta": {"id": "yok-013", "kind": "simplify", "expression": "18/24", "answer": "3/4"}}
+{"messages": [{"role": "user", "content": "-42/56"}], "meta": {"id": "yok-014", "kind": "simplify", "expression": "(-42)/56", "answer": "-3/4"}}
+{"messages": [{"role": "user", "content": "5/7 ? 7/10"}], "meta": {"id": "yok-015", "kind": "compare", "expression": "(5/7)|(7/10)", "answer": ">"}}
+{"messages": [{"role": "user", "content": "2 tam 1/3 + 1/4 = ?"}], "meta": {"id": "yok-016", "kind": "mixed", "expression": "(2+1/3)+(1/4)", "answer": "31/12"}}
+{"messages": [{"role": "user", "content": "(1/2+1/3)×6/5=?"}], "meta": {"id": "yok-017", "kind": "mixed", "expression": "((1/2)+(1/3))*(6/5)", "answer": "1"}}
+{"messages": [{"role": "user", "content": "3 tam 2/5 - 1 tam 3/4=?"}], "meta": {"id": "yok-018", "kind": "mixed", "expression": "(3+2/5)-(1+3/4)", "answer": "33/20"}}
+{"messages": [{"role": "user", "content": "4/9 ÷ 0/5 = ?"}], "meta": {"id": "yok-019", "kind": "invalid", "expression": "(4/9)/(0/5)", "answer": "tanımsız"}}
+{"messages": [{"role": "user", "content": "1/6 + 1/10"}], "meta": {"id": "yok-020", "kind": "add", "expression": "(1/6)+(1/10)", "answer": "4/15"}}
+{"messages": [{"role": "user", "content": "15/28 × 14/45"}], "meta": {"id": "yok-021", "kind": "mul", "expression": "(15/28)*(14/45)", "answer": "1/6"}}
+{"messages": [{"role": "user", "content": "11/12 - 3/8 = ?"}], "meta": {"id": "yok-022", "kind": "sub", "expression": "(11/12)-(3/8)", "answer": "13/24"}}
+{"messages": [{"role": "user", "content": "9/16 ÷ 3/4 = ?"}], "meta": {"id": "yok-023", "kind": "div", "expression": "(9/16)/(3/4)", "answer": "3/4"}}
+{"messages": [{"role": "user", "content": "-2/5 + 7/15 = ?"}], "meta": {"id": "yok-024", "kind": "add", "expression": "(-2/5)+(7/15)", "answer": "1/15"}}
