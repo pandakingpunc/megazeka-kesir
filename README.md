@@ -58,14 +58,14 @@ Yayımlanan modelin eğitiminde **18.000 sorunun 2.084’ü hiçbir harf içermi
 
 Yeni sınavda sadeleştirme, çıkarma ve tanımsız işlem gruplarında **10’ar sorunun 10’unun** son değerini doğru buldu. Kalan miktarı soran sözel problemlerde **6/10**, iki miktarı birleştiren sözel problemlerde **7/10** aldı. Her grupta on örnek bulunduğu için bunlar belirli bir soru türündeki genel başarı oranını tahmin etmekten çok, sonraki geliştirmede hangi cevaplara bakılacağını gösterir.
 
-| Gerçek test örneği | Hata nerede başladı? |
+| Soru | Hata nerede başladı? |
 |---|---|
-| Hamur için yarım, üzeri için sekizde üç bardak süt gerekiyor. Toplam kaç bardak? | Model iki miktarı da doğru okudu. Toplama yerine bölmeyi seçip `4/3` buldu. Doğru işlem `1/2 + 3/8 = 7/8`. |
-| `15/28 × 14/45` | Çarpımı doğru kurup `210/1260` buldu. Son sadeleştirmede `1/10` yazdı. Doğrusu `1/6`. |
-| `5/34 × 17/20` | Sonuç `17/136` olarak doğruydu. Ancak çözümdeki `680 = 8 × 85 + 60` eşitliğinin sağ tarafı 740 eder. |
+| Tarifte hamur için yarım bardak süt, üzeri için de sekizde üç bardak süt gerekiyor. Sütü baştan tek kapta ölçsem kaç bardak ayırmalıyım? | Model iki miktarı da doğru okudu. Toplama yerine bölmeyi seçip `4/3` buldu. Doğru işlem `1/2 + 3/8 = 7/8`. |
+| `15/28 × 14/45` *(yeni sınavdan değil, 24 kısa sorudan)* | Çarpımı doğru kurup `210/1260` buldu. Ortak böleni de doğru olarak 210 buldu, ama bölerken `1/10` yazdı. Doğrusu `1260 ÷ 210 = 6`, yani `1/6`. |
+| 5/34 çarpı 17/20 işlemini deftere geçiriyorum, sonucu ne yazayım? | Çarpımı `85/680` olarak doğru kurdu. Ortak böleni ararken `680 = 8 × 85 + 60` yazdı, oysa 8 × 85 tam 680 eder ve kalan 0’dır. Bu yüzden 85 yerine 5 ile sadeleştirip `17/136` buldu. Değer `1/8`’e eşit olduğu için doğru sayıldı ama sade değil. |
 | `31/42 - (5/18 + 2/63) =` | Ortak payda hesabında bazı satırları tekrarladı ve sonuca gelmeden yanıt kesildi. Doğru değer `3/7`. |
 
-Yeni sınavın 120 yanıtından **20’sinde en az bir yanlış ara eşitlik** bulundu. Özellikle bir çözümü öğrenciye örnek gösterecekseniz, modelin seçtiği işlemi ve ara satırları da kontrol edin. [Test soruları](data/gercek4.jsonl) · [Modelin verdiği tam cevaplar](reports/tahminler/v13-gercek4.jsonl)
+Yeni sınavın 120 yanıtından **20’sinde en az bir yanlış ara eşitlik** bulundu. Eski 600 soruluk sentetik testte bu sayı 73’tür. Özellikle bir çözümü öğrenciye örnek gösterecekseniz, modelin seçtiği işlemi ve ara satırları da kontrol edin. [Test soruları](data/gercek4.jsonl) · [Modelin verdiği tam cevaplar](reports/tahminler/v13-gercek4.jsonl)
 
 ## Kurulum ve kullanım
 
