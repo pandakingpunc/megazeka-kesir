@@ -84,15 +84,15 @@ Farkın en çok görüldüğü yer sözel problemler. Yukarıdaki Ece sorusunda 
 
 v2.0 iki sınavdaki 240 sorunun 6’sında yanlış son değer verdi. Bunların dördünde sayıları doğru okudu ama soruyu yanlış işleme çevirdi. İkisinde ise işlemi doğru kurup hesapta yanıldı.
 
-| Gerçek test örneği | Hata nerede başladı? |
+| Soru | Hata nerede başladı? |
 |---|---|
-| Kırk ikide beş litrelik kepçeyle altıda beş litre çorbayı bitirmek için kepçe kaç kez doldurulur? | Bölmeyi ters kurdu: `5/42 ÷ 5/6 = 1/7`. Doğrusu `5/6 ÷ 5/42 = 7`. v1.0 da bu soruda aynı hatayı yaptı. |
-| Salonun 15/28’i boşaltıldı, bu alanın 7/10’una minder serildi. Minderler salonun ne kadarını kaplar? | “alanın 7/10’u” çarpma isterken iki kesri topladı ve `173/140` buldu. Doğrusu `3/8`. |
-| Kar kalınlığı 13/25 metreden 3/20 metreye inmiş. Kaç metre azalmış? | Çıkarma yerine çarpma seçti ve `39/500` buldu. Doğrusu `37/100`. |
-| `31/42 - (5/18 + 2/63) =` | 63’ü 18’in katı saydı. Ortak payda 126 olmalıydı. Sonuç `3/7` yerine `59/126` çıktı. |
-| 4 tam 7/24’ü 11/18’e böl, sonuçtan 5/12 çıkar. | Öklid adımında `1854 = 7 × 264 + 16` yazdı. `7 × 264 = 1848`, kalan 6’dır. Sonuç `218/33` yerine `79/12` oldu. |
+| Kırk ikide beş litrelik bir kepçem var. Tenceredeki altıda beş litre çorbayı bitirmek için bu kepçeyi kaç kez tam doldurmam gerekir? *(önceki sınav)* | Bölmeyi ters kurdu: `5/42 ÷ 5/6 = 1/7`. Doğrusu `5/6 ÷ 5/42 = 7`. v1.0 da bu soruda aynı hatayı yaptı. |
+| Minderler için spor salonunun 15/28'ini boşalttık. Açtığımız alanın 7/10'una minder serdik. Minderler salonun tamamının ne kadarını kaplıyor? *(önceki sınav)* | “alanın 7/10’u” çarpma isterken iki kesri topladı ve `173/140` buldu. Doğrusu `3/8`. |
+| Ölçümde kar kalınlığı önce 13/25 metre, erime sonunda 3/20 metre çıktı. Karın kalınlığı kaç metre azalmış? *(önceki sınav)* | Çıkarma yerine çarpma seçti ve `39/500` buldu. Doğrusu `37/100`. |
+| `31/42 - (5/18 + 2/63) =` *(önceki sınav)* | 63’ü 18’in katı saydı. Ortak payda 126 olmalıydı. Sonuç `3/7` yerine `59/126` çıktı. |
+| 4 tam 7/24'ü 11/18'e böl. Çıkan sonuçtan 5/12 çıkarınca kaç kalır? *(yeni sınav)* | Öklid adımında `1854 = 7 × 264 + 16` yazdı. `7 × 264 = 1848`, kalan 6’dır. Sonuç `218/33` yerine `79/12` oldu. |
 
-Tabloda olmayan altıncı yanlış, önceki sınavdaki ikinci ters kurulmuş bölmedir. Sözel bir problemin hangi işleme karşılık geldiğini seçmek bu sürümün en zayıf yanı. Özellikle bir çözümü öğrenciye örnek gösterecekseniz, modelin seçtiği işlemi ve ara satırları da kontrol edin. [Yeni sınavın soruları](data/gercek5.jsonl) · [Modelin verdiği tam cevaplar](reports/tahminler/v2-gercek5.jsonl)
+Tabloda olmayan altıncı yanlış, önceki sınavdaki ikinci ters kurulmuş bölmedir: “Doksan altıda on bir metre uzunluğunda parçalar istiyor öğretmen. On ikide on bir metrelik kurdeleden bu boyda kaç parça çıkar?” sorusunda `8` yerine `1/8` buldu. Sözel bir problemin hangi işleme karşılık geldiğini seçmek bu sürümün en zayıf yanı. Özellikle bir çözümü öğrenciye örnek gösterecekseniz, modelin seçtiği işlemi ve ara satırları da kontrol edin. [Yeni sınavın soruları](data/gercek5.jsonl) · [Modelin verdiği tam cevaplar](reports/tahminler/v2-gercek5.jsonl)
 
 ## Kurulum ve kullanım
 
