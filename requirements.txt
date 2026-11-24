@@ -1,11 +1,14 @@
 # Önce platformunuza uygun CUDA destekli PyTorch kurun.
 # Veri üretimi ve CPU testleri için bu paketler gerekmez.
-transformers==5.5.4
-peft==0.18.1
+# v2.0 çıkarımı Colab L4'te bu sürümlerle test edildi (torch 2.14.1+cu130).
+transformers==5.17.0
+peft==0.21.2
 accelerate
 bitsandbytes==0.50.2
 safetensors
+# Linux'ta Qwen3.5'in doğrusal dikkat katmanlarını hızlandırır (isteğe bağlı):
+# flash-linear-attention==0.6.0
 
-# Eğitim için ek paketler Windows'ta Unsloth Studio ortamında kullanıldı.
-# unsloth==2026.11.5
-# trl==0.23.1
+# Eğitim için ek paketler (v2.0 Colab'da eğitildi):
+# unsloth==2026.11.11
+# trl==1.15.0

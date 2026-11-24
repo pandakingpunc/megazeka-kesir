@@ -134,20 +134,29 @@ def main():
     from trl import SFTConfig, SFTTrainer
 
     print(f"[surum] unsloth={unsloth.__version__} trl={trl.__version__} transformers={transformers.__version__} torch={torch.__version__}")
-    if trl.__version__ != "0.23.1":
-        sys.exit("HATA: TRL 0.23.1 gerekli. Unsloth Studio ortamini kullanin.")
+    trl_beklenen = cfg.get("trl_surumu", "0.23.1")
+    if trl_beklenen and trl.__version__ != trl_beklenen:
+        sys.exit(f"HATA: TRL {trl_beklenen} gerekli. Unsloth Studio ortamini kullanin.")
     if not torch.cuda.is_available():
         sys.exit("HATA: CUDA yok.")
 
     # ---- model ----
-    model, tokenizer = FastLanguageModel.from_pretrained(
+    # Gorsel-metin tabanlar (or. Qwen3.5) icin "yukleyici": "FastModel"; yalniz metin egitilir.
+    if cfg.get("yukleyici", "FastLanguageModel") == "FastModel":
+        from unsloth import FastModel as Yukleyici
+    else:
+        Yukleyici = FastLanguageModel
+    model, tokenizer = Yukleyici.from_pretrained(
         model_name=cfg["taban"],
         max_seq_length=cfg["max_seq_length"],
         dtype=None,
         load_in_4bit=True,
         use_gradient_checkpointing=cfg["gradient_checkpointing"],
     )
-    model = FastLanguageModel.get_peft_model(
+    if hasattr(tokenizer, "tokenizer"):  # isleyici (processor) donduyse metin tokenizer'i kullan
+        print(f"[taban] isleyici {type(tokenizer).__name__} -> {type(tokenizer.tokenizer).__name__}")
+        tokenizer = tokenizer.tokenizer
+    model = Yukleyici.get_peft_model(
         model,
         r=cfg["rank"],
         target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
@@ -291,8 +300,8 @@ def main():
     # ---- yalniz asistan yanitlarinda kayip (Studio ile ayni yol) ----
     trainer = train_on_responses_only(
         trainer,
-        instruction_part=INSTRUCTION_PART,
-        response_part=RESPONSE_PART,
+        instruction_part=cfg.get("instruction_part", INSTRUCTION_PART),
+        response_part=cfg.get("response_part", RESPONSE_PART),
         num_proc=1,
     )
     n_train, n_val = len(trainer.train_dataset), len(trainer.eval_dataset)

@@ -1,0 +1,22 @@
+{
+  "taban": "unsloth/Qwen3.5-4B",
+  "train": "data/v13/train.jsonl",
+  "val": "data/v13/val.jsonl",
+  "max_seq_length": 1792,
+  "epochs": 2,
+  "batch_size": 8,
+  "gradient_accumulation": 2,
+  "learning_rate": 0.0002,
+  "warmup_steps": 50,
+  "scheduler": "linear",
+  "weight_decay": 0.001,
+  "rank": 16,
+  "alpha": 32,
+  "dropout": 0.0,
+  "eval_steps": 250,
+  "save_steps": 125,
+  "seed": 42,
+  "trl_surumu": null,
+  "response_part": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "not": "v1.3 verisi ve ayarlari (8 x 2 dahil); yalniz taban degisir. Colab L4'te bf16 ile egitildi (T4'te bf16 yok, Qwen3.5 fp32'ye dusup ~20 sn/adim). 125 adimda bir kayit. Cikarimda enable_thinking=False."
+}

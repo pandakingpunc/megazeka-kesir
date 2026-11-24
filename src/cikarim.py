@@ -6,22 +6,48 @@ from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
 TABAN = "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit"
-YAYIN_ADAPTORU = "pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr"
+V1_ADAPTORU = "pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr"
+V2_ADAPTORU = "pandakingpunc/megazeka-kesir-qwen3.5-4b-tr"
+YAYIN_ADAPTORU = V2_ADAPTORU
+# Yayımlanan adaptörler sürüm etiketinden yüklenir.
+YAYIN_SURUMLERI = {V1_ADAPTORU: "v1.0", V2_ADAPTORU: "v2.0"}
 MAKS_YENI_TOKEN = 512
 
 
 def yukle(adapter=None):
+    """Adaptörün taban modelini yükler. Adaptör yoksa v1 tabanı kullanılır."""
     import torch
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import AutoTokenizer
 
-    tokenizer = AutoTokenizer.from_pretrained(TABAN, padding_side="left")
-    model = AutoModelForCausalLM.from_pretrained(
-        TABAN, device_map="cuda", dtype=torch.bfloat16
-    )
+    revision = YAYIN_SURUMLERI.get(adapter)
+    taban = TABAN
+    if adapter:
+        from peft import PeftConfig
+
+        taban = PeftConfig.from_pretrained(adapter, revision=revision).base_model_name_or_path
+
+    tokenizer = AutoTokenizer.from_pretrained(taban, padding_side="left")
+    if "qwen3.5" in taban.lower():
+        # Qwen3.5 görsel-metin modelidir; adaptör metin katmanlarında eğitildi.
+        # Eğitimdeki gibi 4 bit NF4 yüklenir, hesaplama bfloat16 yapılır.
+        from transformers import AutoModelForImageTextToText, BitsAndBytesConfig
+
+        model = AutoModelForImageTextToText.from_pretrained(
+            taban, device_map="cuda", dtype=torch.bfloat16,
+            quantization_config=BitsAndBytesConfig(
+                load_in_4bit=True, bnb_4bit_quant_type="nf4",
+                bnb_4bit_use_double_quant=True, bnb_4bit_compute_dtype=torch.bfloat16,
+            ),
+        )
+    else:
+        from transformers import AutoModelForCausalLM
+
+        model = AutoModelForCausalLM.from_pretrained(
+            taban, device_map="cuda", dtype=torch.bfloat16
+        )
     if adapter:
         from peft import PeftModel
 
-        revision = "v1.0" if adapter == YAYIN_ADAPTORU else None
         model = PeftModel.from_pretrained(model, adapter, revision=revision)
     return tokenizer, model.eval()
 
@@ -34,6 +60,8 @@ def uret(tokenizer, model, sorular, max_new_tokens=MAKS_YENI_TOKEN):
             [{"role": "user", "content": soru}],
             tokenize=False,
             add_generation_prompt=True,
+            # Qwen3.5 düşünme bölümünü boş bırakır; Qwen2.5 şablonu bu değişkeni kullanmaz.
+            enable_thinking=False,
         )
         for soru in sorular
     ]
