@@ -6,20 +6,21 @@ from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
 TABAN = "unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit"
-V1_ADAPTORU = "pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr"
-V2_ADAPTORU = "pandakingpunc/megazeka-kesir-qwen3.5-4b-tr"
-YAYIN_ADAPTORU = V2_ADAPTORU
-# Yayımlanan adaptörler sürüm etiketinden yüklenir.
-YAYIN_SURUMLERI = {V1_ADAPTORU: "v1.0", V2_ADAPTORU: "v2.0"}
+YAYIN_ADAPTORU = "pandakingpunc/megazeka-kesir-tr"
+# v1.0 bu adla yayımlandı; Hugging Face eski adı yeni depoya yönlendirir.
+ESKI_ADAPTOR = "pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr"
+# Sürüm verilmezse yayımlanan adaptörler bu etiketlerden yüklenir.
+# v1.0: Qwen2.5-1.5B-Instruct tabanı, v2.0: Qwen3.5-4B tabanı.
+VARSAYILAN_SURUM = {YAYIN_ADAPTORU: "v2.0", ESKI_ADAPTOR: "v1.0"}
 MAKS_YENI_TOKEN = 512
 
 
-def yukle(adapter=None):
-    """Adaptörün taban modelini yükler. Adaptör yoksa v1 tabanı kullanılır."""
+def yukle(adapter=None, surum=None):
+    """Adaptörün taban modelini yükler. Adaptör yoksa v1.0 tabanı kullanılır."""
     import torch
     from transformers import AutoTokenizer
 
-    revision = YAYIN_SURUMLERI.get(adapter)
+    revision = surum or VARSAYILAN_SURUM.get(adapter)
     taban = TABAN
     if adapter:
         from peft import PeftConfig
@@ -105,6 +106,7 @@ def sorulari_oku(yol, limit):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--adapter", help="PEFT adaptör klasörü veya depo adı")
+    parser.add_argument("--surum", help="Hugging Face sürüm etiketi, örneğin v1.0 veya v2.0")
     parser.add_argument("--test", type=Path, default=KOK / "data" / "test.jsonl")
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--batch-size", type=int, default=16)
@@ -121,7 +123,7 @@ def main():
     except (OSError, ValueError) as hata:
         parser.error(str(hata))
     if kayitlar:
-        tokenizer, model = yukle(args.adapter)
+        tokenizer, model = yukle(args.adapter, args.surum)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8") as dosya:

@@ -18,13 +18,14 @@ def sohbet_sorusu(soru):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--adapter", default=YAYIN_ADAPTORU, help="PEFT adaptör klasörü veya depo adı")
+    parser.add_argument("--surum", help="Hugging Face sürüm etiketi; varsayılan v2.0, önceki model için v1.0")
     parser.add_argument("--ham", action="store_true", help="Kısa işlemleri de Türkçe yönerge eklemeden gönder")
     parser.add_argument("--max-new-tokens", type=int, default=1500)
     args = parser.parse_args()
     if args.max_new_tokens <= 0:
         parser.error("Yeni token sayısı pozitif olmalı.")
 
-    tokenizer, model = yukle(args.adapter)
+    tokenizer, model = yukle(args.adapter, args.surum)
     print("Kesir sorunuzu yazın. Çıkmak için q yazın.")
     while True:
         try:

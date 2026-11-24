@@ -2,7 +2,9 @@
 
 Megazeka-Kesir’e `(7/18+11/24)*8/19=?` yazabilirsiniz. Model önce parantezi çözer, kesirleri hangi paydaya getireceğini Türkçe anlatır, ara işlemleri yazar ve cevabı `Sonuç: 61/171` satırıyla bitirir. Aynı modele “bir buçuk metrelik telin dokuzda dördü kaç metre?” gibi bir problem de sorabilirsiniz. Bu kez önce sözcükleri kesirlere, ardından soruyu bir işleme çevirmesi gerekir.
 
-**v2.0, Qwen3.5-4B tabanına geçen sürümdür.** Eğitim verisi ve ayarları v1.0 ile aynı, değişen yalnızca taban model. İki ayrı kör sınavda doğru son değer sayısı, v1.0’ın ikisinde de aldığı 103/120’den 119/120’ye ve 115/120’ye çıktı. Yeni sınavda ara adımında yanlış eşitlik bulunan cevaplar 14’ten 1’e indi. Kaynak kod ve testler bu depoda. Eğitilmiş model ve veriler Hugging Face’te indirilebilir. Modeli kullanmak için yeniden eğitmeniz gerekmez. [v2 model kartı](https://huggingface.co/pandakingpunc/megazeka-kesir-qwen3.5-4b-tr) · [Veri kümesi](https://huggingface.co/datasets/pandakingpunc/megazeka-kesir-tr-steps) · [v1.0 (Qwen2.5-1.5B)](https://github.com/pandakingpunc/megazeka-kesir/tree/v1.0)
+**v2.0, Qwen3.5-4B tabanına geçen sürümdür.** Eğitim verisi ve ayarları v1.0 ile aynı, değişen yalnızca taban model. İki ayrı kör sınavda doğru son değer sayısı, v1.0’ın ikisinde de aldığı 103/120’den 119/120’ye ve 115/120’ye çıktı. Yeni sınavda ara adımında yanlış eşitlik bulunan cevaplar 14’ten 1’e indi. Kaynak kod ve testler bu depoda. Eğitilmiş model ve veriler Hugging Face’te indirilebilir. Modeli kullanmak için yeniden eğitmeniz gerekmez. [Model kartı](https://huggingface.co/pandakingpunc/megazeka-kesir-tr) · [Veri kümesi](https://huggingface.co/datasets/pandakingpunc/megazeka-kesir-tr-steps) · [v1.0 (Qwen2.5-1.5B)](https://github.com/pandakingpunc/megazeka-kesir/tree/v1.0)
+
+Model deposu v2.0 ile tabanı anmayan `megazeka-kesir-tr` adını aldı. İki sürüm aynı depoda `v1.0` ve `v2.0` etiketleriyle durur. Eski `megazeka-kesir-qwen2.5-1.5b-tr` adresi bu depoya yönlenir.
 
 | Modele verilen soru | Modelin yazdığı son değer |
 |---|---|
@@ -104,13 +106,13 @@ python -m pip install -r requirements.txt
 python -X utf8 src/sohbet.py --ham
 ```
 
-`Soru>` satırına bir kesir sorusu yazın. Çıkmak için `q` girin. İlk çalıştırmada Qwen3.5-4B tabanı (yaklaşık 9 GB) ve Megazeka-Kesir adaptörü Hugging Face’ten indirilir. Hesaplama bilgisayarınızda yapılır. `--ham` soruyu aynen modele gönderir. Bu seçeneği kaldırırsanız terminal, yalnızca işlem içeren girdilere Türkçe çözüm isteğini kendisi ekler. Ölçümlerde soru aynen verildi. v1.0 adaptörünü denemek için `--adapter pandakingpunc/megazeka-kesir-qwen2.5-1.5b-tr` ekleyin.
+`Soru>` satırına bir kesir sorusu yazın. Çıkmak için `q` girin. İlk çalıştırmada Qwen3.5-4B tabanı (yaklaşık 9 GB) ve Megazeka-Kesir adaptörü Hugging Face’ten indirilir. Hesaplama bilgisayarınızda yapılır. `--ham` soruyu aynen modele gönderir. Bu seçeneği kaldırırsanız terminal, yalnızca işlem içeren girdilere Türkçe çözüm isteğini kendisi ekler. Ölçümlerde soru aynen verildi. v1.0’ı (Qwen2.5-1.5B) denemek için `--surum v1.0` ekleyin.
 
 Linux’ta `flash-linear-attention` paketini kurmak Qwen3.5’in doğrusal dikkat katmanlarını hızlandırır. Paket yoksa model aynı sonucu daha yavaş veren PyTorch yolunu kullanır.
 
 ### Python içinden
 
-Aşağıdaki örnek v2.0 adaptörünü sürüm etiketinden yükler. Qwen3.5-4B görsel-metin modeli olduğu için `AutoModelForImageTextToText` ile yüklenir. Adaptör yalnızca metin katmanlarında eğitildi. `enable_thinking=False` modelin düşünme bölümünü boş bırakır. Eğitimde de bu biçim kullanıldı.
+Aşağıdaki örnek v2.0 adaptörünü sürüm etiketinden yükler. Qwen3.5-4B görsel-metin modeli olduğu için `AutoModelForImageTextToText` ile yüklenir. Adaptör yalnızca metin katmanlarında eğitildi. `enable_thinking=False` modelin düşünme bölümünü boş bırakır. Eğitimde de bu biçim kullanıldı. v1.0’ın tabanı ve yükleme kodu farklıdır, onun örneği [v1.0 model kartında](https://huggingface.co/pandakingpunc/megazeka-kesir-tr/blob/v1.0/README.md) durur.
 
 ```python
 import torch
@@ -118,7 +120,7 @@ from peft import PeftModel
 from transformers import AutoModelForImageTextToText, AutoTokenizer, BitsAndBytesConfig
 
 base_id = "unsloth/Qwen3.5-4B"
-adapter_id = "pandakingpunc/megazeka-kesir-qwen3.5-4b-tr"
+adapter_id = "pandakingpunc/megazeka-kesir-tr"
 tokenizer = AutoTokenizer.from_pretrained(base_id)
 quant = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True,
                            bnb_4bit_compute_dtype=torch.bfloat16)
@@ -195,7 +197,7 @@ cd src
 python -X utf8 puanla.py --test ../data/gercek5.jsonl --tahmin ../reports/tahminler/v2-gercek5.jsonl --out ../reports/v2-gercek5-puan.json
 ```
 
-Cevapları yeniden üretmek için `python -X utf8 src/cikarim.py --adapter pandakingpunc/megazeka-kesir-qwen3.5-4b-tr --test data/gercek5.jsonl --out tahmin.jsonl --max-new-tokens 1500` çalıştırın. Yeniden eğitim Colab’da yapıldı. [Not defteri](colab/megazeka_kesir_q35_4b.ipynb) eğitim kodunu, ayarları ve veriyi Drive’a kurar, sonra eğitimi arka planda başlatıp ilerlemeyi yazar. Test edilen eğitim ortamı Unsloth 2026.11.11, TRL 1.15.0, Transformers 5.17.0 ve PyTorch 2.14.1+cu130 kullanıyordu. Kendi ortamınızda eğitimi başlatmak için:
+Cevapları yeniden üretmek için `python -X utf8 src/cikarim.py --adapter pandakingpunc/megazeka-kesir-tr --test data/gercek5.jsonl --out tahmin.jsonl --max-new-tokens 1500` çalıştırın. Yeniden eğitim Colab’da yapıldı. [Not defteri](colab/megazeka_kesir_q35_4b.ipynb) eğitim kodunu, ayarları ve veriyi Drive’a kurar, sonra eğitimi arka planda başlatıp ilerlemeyi yazar. Test edilen eğitim ortamı Unsloth 2026.11.11, TRL 1.15.0, Transformers 5.17.0 ve PyTorch 2.14.1+cu130 kullanıyordu. Kendi ortamınızda eğitimi başlatmak için:
 
 ```shell
 python -X utf8 training/train.py --config configs/v2-q35-4b.json --ad v2-q35-4b
